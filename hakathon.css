@@ -127,6 +127,9 @@
 
  /* most popular car deals */
 
+ .card .i{
+    margin-right: 5%;
+ }
 .work-btn>button{
     padding: 5px 30px;
     border-radius: 10px;

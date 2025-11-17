@@ -1,0 +1,299 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+/* navbar */
+.nav {
+    height: 0px;
+}
+
+.sign-in-btn:hover{
+    color: black;
+    text-decoration: underline;
+}
+.nav-btn a {
+    text-decoration: none;
+    color: white;
+}
+
+.nav-btn a:hover {
+    color: black;
+}
+
+.nav a {
+    color: black;
+}
+
+.nav a:visited {
+    color: black;
+}
+
+.nav a:hover {
+    text-decoration: underline;
+    color: black;
+}
+
+
+
+.container>img{
+    cursor: pointer;
+}
+.container .btn{
+    color: white;
+    background-color: #1572D3;
+    margin-left: 10px;
+    border: none;
+}
+.container .sign-in-btn{
+    border: none;
+    background-color: white;
+}
+
+/* hero section */
+
+/* hero seection */
+.main-hero {
+    /* width: 100%;
+    height: 700px; */
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: var(--gap);
+    align-items: center;
+    padding: 28px;
+    border-radius: 16px;
+}
+
+.hero {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 40px;
+    /* margin: 50px; */
+    /* margin-top: 5%; */
+    /* margin-left: -100px; */
+}
+
+.hero-img {
+    /* width: -400px;
+    margin-left: -100px; */
+    display: flex;
+    width: 100%;
+    height: 100%;
+    overflow: hidden
+}
+.hero-img>img{
+    display: flex;
+    width: 80%;
+    height: 100%;
+}
+
+
+/* location */
+.search-btn{
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: #1572D3;
+    color: white;
+}
+.search-btn:hover{
+    color: black;
+}
+
+/* how it work */
+.work-btn>button{
+    border: none;
+    background-color: rgb(159, 197, 212);    
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+.work-btn>button:hover{
+    color: white;
+}
+
+
+/* cards */
+.cards .card{
+    margin-left: 80px;
+    padding-bottom: 0px;
+    border-radius: 40px;
+}
+
+
+/* experience */
+
+.work-btn>h4{
+     padding: 5px 30px;
+    border-radius: 10px;
+    color: black;
+}
+
+ /* most popular car deals */
+
+.work-btn>button{
+    padding: 5px 30px;
+    border-radius: 10px;
+    background-color: #1572D3;
+    color: white;
+ }
+.work-btn>button:hover{
+    color: black;
+}
+
+
+/* footer start*/
+
+.footer {
+  background: #02203c;
+  color: #ffffff;
+  padding: 70px 30px 30px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.footer-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 40px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-box h3 {
+  font-size: 18px;
+  font-weight: 700;
+  margin-bottom: 18px;
+}
+
+.footer-box p,
+.footer-box a {
+  color: #d7d7d7;
+  font-size: 14px;
+  text-decoration: none;
+  display: block;
+  margin: 6px 0;
+  transition: 0.3s;
+}
+
+.footer-box a:hover {
+  color: #ffffff;
+  text-decoration: underline;
+}
+
+.footer-box .logo img {
+  width: 140px;
+  margin-bottom: 10px;
+}
+
+/* Social Icons */
+.social a {
+  font-size: 20px;
+  margin-right: 12px;
+  color: white;
+  transition: 0.3s;
+}
+
+.social a:hover {
+  opacity: 0.7;
+}
+
+/* Footer Bottom */
+.footer-bottom {
+  text-align: center;
+  padding: 25px 0 0;
+  margin-top: 25px;
+  border-top: 1px solid #335b7b;
+  color: #d7d7d7;
+  font-size: 14px;
+}
+
+
+
+/* responsive */
+
+/* tablet screen responsive*/
+@media (max-width: 992px) {
+    .hero {
+        padding: 20px;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .main-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+
+    .hero-img img {
+        width: 90%;
+        margin: auto;
+    }
+
+    .cards .card {
+        margin-left: 0;
+    }
+}
+
+/* mobile and tablet */
+@media (max-width: 768px) {
+
+    .nav {
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+    }
+
+    .container .btn,
+    .container .sign-in-btn {
+        margin: 5px 0;
+    }
+
+    .main-hero {
+        padding: 20px;
+    }
+
+    .footer-container {
+        grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+        gap: 25px;
+    }
+}
+
+/* mobile small */
+@media (max-width: 576px) {
+
+    .hero {
+        padding: 15px;
+    }
+
+    .hero-img img {
+        width: 100%;
+    }
+
+    .cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+    .cards .card {
+        width: 90%;
+        margin: 0;
+    }
+
+    .search-btn {
+        width: 100%;
+        display: block;
+    }
+
+    .work-btn button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .footer-container {
+        text-align: center;
+    }
+
+    .social a {
+        margin: 5px;
+    }
+}

@@ -21,33 +21,45 @@
 
 <body>
     <!-- header start -->
-    <nav class="navbar d-flex  flex-wrap justify-content-between gap-5 gap-sm-4">
+    <nav class="navbar d-flex d-sm-flex d-md-flex flex-wrap flex-nowrap justify-content-between gap-5 gap-sm-4">
+
         <div class="container">
             <img src="./images/Frame 993.png" alt="" />
 
-            <div class="d-flex d-sm-flex d-md-flex ">
-                <ul class="nav container d-sm-flex">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Become a rental</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Rental Deals</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active d-none d-md-flex" aria-current="page" href="#">How it works</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active d-none d-md-flex" aria-current="page" href="#">Why choose us
-                        </a>
-                    </li>
+            <div class="navbar-nav d-flex d-sm-flex d-md-flex ">
 
-                    <!-- buttons -->
-                    <button class="sign-in-btn">Sign in</button>
-                    <button class="btn">Sign up</button>
-                </ul>
+                <!-- links -->
+                <div class="nav-link d-flex justify-content-center" id="mainNav">
+
+                    <ul class="nav gap-3">
+                        <li class="nav-item d-flex flex-wrap">
+                            <a class="nav-link active" aria-current="page" href="#">Become a rental</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Rental Deals</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">How it works</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#">Why choose us
+                            </a>
+                        </li>
+
+
+                        <!-- buttons -->
+                        <div class="d-flex gap-3">
+                            <button class="sign-in-btn">Sign in</button>
+                            <button class="btn d-flex flex-wrap">Sign up</button>
+                        </div>
+
+                    </ul>
+                </div>
+
             </div>
         </div>
     </nav>
+
     <!-- Header End -->
 
     <!-- Hero Section start -->
@@ -76,20 +88,38 @@
     </div>
 
     <!-- location etx -->
-    <div class="main- container d-flex pb-5 justify-content-between">
-        <div>
-            <img src="./images/Frame 18.png" alt="" />
+    <div class="main- container d-flex pb-5 justify-content-between text-center">
+
+        <div class="lo">
+            <i class="ps-3 fa-solid fa-location-crosshairs"></i>
+            <h6 class="h6">Location <br>
+                <p class="p"> search your location</p>
+            </h6>
         </div>
 
-        <div>
-            <img src="./images/Frame 19.png" alt="" />
+        <div class="lo">
+            <h4>|<br>|</h4>
         </div>
 
-        <div>
-            <img src="./images/Frame 14.png" alt="" />
-
-            <button class="search-btn" type="button">Search</button>
+        <div class="lo">
+            <i class="fa-solid fa-calendar"></i>
+            <h6>Pickup date <br>
+                <p class="p">Tue 15 Feb, 09:00</p>
+            </h6>
         </div>
+
+        <div class="lo">
+            <h4>|<br>|</h4>
+        </div>
+
+        <div class="lo">
+            <i class="fa-solid fa-calendar"></i>
+            <h6>Return date <br>
+                <p class="p">Thu 16 Feb, 11:00</p>
+            </h6>
+        </div>
+
+        <button class="searchbtn" type="button">Search</button>
 
     </div>
 
@@ -99,17 +129,17 @@
 
     <div class="work-section">
 
-        <div class="work-btn text-center pt-5">
-            <button type="button">How it work</button>
+        <div class="work-btn1 d-flex flex-wrap text-center pt-5">
+            <button>How it work</button>
         </div>
 
         <div class="rent-3 text-center pt-3">
-            <h2>Rent with following 3 steps</h2>
+            <h2>Rent with following 3 working steps</h2>
         </div>
 
 
         <!-- cards -->
-        <div class="cards container d-flex pt-5">
+        <div class="cards container d-flex flex-wrap pt-5">
 
             <div class="card" style="width: 18rem;">
                 <img src="./images/🦆 icon _car_.png" class="card-img-top" alt="...">
@@ -141,7 +171,7 @@
 
         <!--car icon div toyo hondo -->
 
-        <div class="p-4">
+        <div class="container-fluid p-4 text-center">
             <img src="images/Frame 29.png" alt="">
         </div>
 
@@ -149,7 +179,7 @@
         <!-- Ecperience -->
 
         <div class="work-btn text-center pt-5">
-            <button type="button">How it work</button>
+            <button>Why choose us</button>
         </div>
 
         <div class="main-hero container-fluid d-flex pt-5">
@@ -163,6 +193,7 @@
 
             <section class="hero">
                 <div class="hero">
+
                     <hgroup class="heading d-block">
                         <h1>We offer the best experience with our mental deals</h1>
                         <p>
@@ -219,8 +250,8 @@
             <section>
 
 
-                <div class="work-btn text-center pt-5">
-                    <button type="button">How it works</button>
+                <div class="work-btn-deal text-center pt-5">
+                    <button type="button">Popular rental deals</button>
                 </div>
 
                 <div class="rent-3 text-center pt-3">
@@ -229,44 +260,92 @@
 
 
                 <!-- cards -->
-                <div class="cards container d-flex pt-5">
+                <div class="cards container d-flex d-md-2 d-sm-1 pt-2">
 
-                    <div class="card" style="width: 18rem;">
+                    <!-- card 1 -->
+                    <div class="card1" style="width: 18rem;">
                         <img src="./images/image 12.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img class="i" src="./images/Frame 969.png" alt="">
+                        <div class="card-body1">
+                            <h6>Jaguar XE L P250</h6>
+                            <p>⭐ <b>4.8</b> <i class="op">(2,436 reviews)</i></p>
+                            <p class="d-flex"><img src="./images/user.png" alt=""><i class="op">4 passengers</i>
+                                <img class="gear" src="./images/o2DSev.tif_1_.png" alt=""><i class="op">Auto</i>
+                            </p>
+
+                            <p><img src="./images/Frame.png" alt=""><i class="op">Air Conditioning</i>
+                                <img class="gear1" src="./images/Frame (1).png" alt=""><i class="op">4 Doors</i>
+                            </p>
+                            <hr>
+                            <p><b class="op">Price</b> <b class="op1">$1,800 <i>/day</i></b></p>
+
+                            <img class="rent-btn" src="./images/Frame 959.png" alt="">
                         </div>
                     </div>
 
-                    <!-- 2nd color -->
+                    <!-- 2nd card -->
 
-                    <div class="card" style="width: 18rem;">
+                    <div class="card1" style="width: 18rem;">
                         <img src="./images/Audi 1 (1).png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img class="i" src="./images/Frame 969 (1).png" alt="">
+                        <div class="card-body1">
+                            <h6>Audi R8</h6>
+                            <p>⭐ <b>4.6</b> <i class="op">(1,936 reviews)</i></p>
+                            <p class="d-flex"><img src="./images/user.png" alt=""><i class="op">2 passengers</i>
+                                <img class="gear" src="./images/o2DSev.tif_1_.png" alt=""><i class="op">Auto</i>
+                            </p>
+
+                            <p><img src="./images/Frame.png" alt=""><i class="op">Air Conditioning</i>
+                                <img class="gear1" src="./images/Frame (1).png" alt=""><i class="op">2 Doors</i>
+                            </p>
+                            <hr>
+                            <p><b class="op">Price</b> <b class="op1">$2,100 <i>/day</i></b></p>
+                            <img class="rent-btn" src="./images/Frame 959.png" alt="">
+
                         </div>
                     </div>
 
-                    <!-- 3rd color -->
-                    <div class="card" style="width: 18rem;">
+                    <!-- 3rd card -->
+                    <div class="card1" style="width: 18rem;">
                         <img src="./images/image 13.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img class="i" src="./images/Frame 969 (2).png" alt="">
+                        <div class="card-body1">
+                            <h6>BMW M3</h6>
+                            <p>⭐ <b>4.5</b> <i class="op">(2,036 reviews)</i></p>
+                            <p class="d-flex"><img src="./images/user.png" alt=""><i class="op">4 passengers</i>
+                                <img class="gear" src="./images/o2DSev.tif_1_.png" alt=""><i class="op">Auto</i>
+                            </p>
+
+                            <p><img src="./images/Frame.png" alt=""><i class="op">Air Conditioning</i>
+                                <img class="gear1" src="./images/Frame (1).png" alt=""><i class="op">4 Doors</i>
+                            </p>
+                            <hr>
+                            <p><b class="op">Price</b> <b class="op1">$1,600 <i>/day</i></b></p>
+                            <img class="rent-btn" src="./images/Frame 959.png" alt="">
+
                         </div>
                     </div>
 
-                    <!-- 4th color -->
-                    <div class="card" style="width: 18rem;">
+                    <!-- 4th card -->
+                    <div class="card1" style="width: 18rem;">
                         <img src="./images/image 11.png" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <img class="i" src="./images/Frame 969 (3).png" alt="">
+                        <div class="card-body1">
+                            <h6>Lamborgini Huracan</h6>
+                            <p>⭐ <b>4.3</b> <i class="op">(2,236 reviews)</i></p>
+                            <p class="d-flex"><img src="./images/user.png" alt=""><i class="op">2 passengers</i>
+                                <img class="gear" src="./images/o2DSev.tif_1_.png" alt=""><i class="op">Auto</i>
+                            </p>
+
+                            <p><img src="./images/Frame.png" alt=""><i class="op">Air Conditioning</i>
+                                <img class="gear1" src="./images/Frame (1).png" alt=""><i class="op">2 Doors</i>
+                            </p>
+                            <hr>
+                            <p><b class="op">Price</b> <b class="op1">$2,300 <i>/day</i></b></p>
+                            <img class="rent-btn" src="./images/Frame 959.png" alt="">
                         </div>
                     </div>
                 </div>
 
                 <!-- what people say about us  -->
 
-                <div class="work-btn text-center pt-5">
+                <div class="work-btn2 text-center pt-5">
                     <button type="button">Testominals</button>
                 </div>
 
@@ -275,27 +354,44 @@
                 </div>
 
 
-                <div class="container-fluid pb-5">
-                    <img src="./images/Frame 988.png" alt="">
+                <div class="about-us container d-flex flex-wrap d-lmd-flex d-smd-flex d-sm-flex pb-5 pt-5">
+                    <div class="about-img">
+                        <img src="./images/Rectangle 8.png" alt="">
+                    </div>
+
+                    <div class="about-txt flex-wrap">
+                        <h1>5.0 <sub>stars</sub></h1>
+                        <p>⭐ ⭐ ⭐ ⭐ ⭐</p>
+                        <br> <br>
+                        <p>"I feel very secure when using <br> when using caretail's services. Your customer <br> care
+                            team is very
+                            enthusiastic and <br> the driver is always on time."</p>
+                        <br>
+                        <br>
+                        <h3>Charlie johnson</h3>
+                        <p>From New York, US</p>
+                    </div>
+
+
                 </div>
 
-                
-                <!-- footer -->
-                <div class="work-section">
-                    <section class="f">
 
-                        <div class="work-btn text-start pt-5">
-                            <button type="button">Download</button>
+                <!-- footer -->
+                <div class="work-section d-flex pt-5">
+                    <section class="footer-txt">
+
+                        <div class="download-btn container">
+                            <button>Dowmload</button>
                         </div>
+                      
 
                         <div class="rent-3 text-start pt-2">
-                            <h2>Download Rentcars <br> App for free</h2>
+                            <h2>Download Rentcars <br> App for <b class="free">free</b></h2>
                         </div>
 
                         <div class="rent-3 text-start pt-1">
                             <p>For faster, easier booking and exclusive deals.</p>
                         </div>
-
 
                         <div class="d-flex">
 
@@ -305,69 +401,75 @@
                                 <img src="./images/image 3.png" alt="" />
                             </div>
 
+                            
+                        <!-- image --> 
+                        <div class="footer-img container d-flex flex-wrap d-lmd-flex d-smd-flex d-sm-flex">
+                            <img src="./images/Screenshot (112).png" alt="">
+                        </div>
+
                     </section>
                 </div>
 
             </section>
 
             <!-- big footer -->
- 
 
-                <footer class="footer">
-                    <div class="footer-container">
 
-                        <div class="footer-box">
-                            <h2><span class="icon"><img src="./images/Frame 993.png" alt=""></span></h2>
-                            <p>25566 Hc 1, Glenallen,<br>Alaska, 99588, USA</p>
-                            <p>📞 +603 4784 273 12</p>
-                            <p >✉️ rentcars@gmail.com</p>
-                        </div>
+            <footer class="footer">
+                <div class="footer-container">
 
-                        <div class="footer-box col">
-                            <h3>Our Product</h3>
-                            <a href="#">Career</a>
-                            <a href="#">Car</a>
-                            <a href="#">Packages</a>
-                            <a href="#">Features</a>
-                            <a href="#">Priceline</a>
-                        </div>
-
-                        <div class="footer-box">
-                            <h3>Resources</h3>
-                            <a href="#">Download</a>
-                            <a href="#">Help Centre</a>
-                            <a href="#">Guides</a>
-                            <a href="#">Partner Network</a>
-                            <a href="#">Cruises</a>
-                            <a href="#">Developer</a>
-                        </div>
-
-                        <div class="footer-box">
-                            <h3>About Rentcars</h3>
-                            <a href="#">Why choose us</a>
-                            <a href="#">Our Story</a>
-                            <a href="#">Investor Relations</a>
-                            <a href="#">Press Center</a>
-                            <a href="#">Advertise</a>
-                        </div>
-
-                        <div class="footer-box">
-                            <h3>Follow Us</h3>
-                            <div class="social">
-                                <a href="https://wa.me/+923278264078"><i class="fa-brands fa-whatsapp"></i></a>
-                                <a href=""><i class="fab fa-facebook"></i></a>
-                                <a href=""><i class="fab fa-instagram"></i></a>
-                            </div>
-                        </div>
+                    <div class="footer-box">
+                        <h2><span class="icon"><img src="./images/Frame 993.png" alt=""></span></h2>
+                        <p>25566 Hc 1, Glenallen,<br>Alaska, 99588, USA</p>
+                        <p>📞 +603 4784 273 12</p>
+                        <p>✉️ rentcars@gmail.com</p>
                     </div>
 
-                    <div class="footer-bottom">
-                        Copyright © 2023 · Rentcars, All Rights Reserved
+                    <div class="footer-box col">
+                        <h3>Our Product</h3>
+                        <a href="#">Career</a>
+                        <a href="#">Car</a>
+                        <a href="#">Packages</a>
+                        <a href="#">Features</a>
+                        <a href="#">Priceline</a>
                     </div>
-                </footer>
 
-                <!-- Font Awesome Icons -->
-                <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+                    <div class="footer-box">
+                        <h3>Resources</h3>
+                        <a href="#">Download</a>
+                        <a href="#">Help Centre</a>
+                        <a href="#">Guides</a>
+                        <a href="#">Partner Network</a>
+                        <a href="#">Cruises</a>
+                        <a href="#">Developer</a>
+                    </div>
+
+                    <div class="footer-box">
+                        <h3>About Rentcars</h3>
+                        <a href="#">Why choose us</a>
+                        <a href="#">Our Story</a>
+                        <a href="#">Investor Relations</a>
+                        <a href="#">Press Center</a>
+                        <a href="#">Advertise</a>
+                    </div>
+
+                    <div class="footer-box">
+                        <h3>Follow Us</h3>
+                        <div class="social">
+                            <a href="https://wa.me/+923278264078"><i class="fa-brands fa-whatsapp"></i></a>
+                            <a href=""><i class="fab fa-facebook"></i></a>
+                            <a href=""><i class="fab fa-instagram"></i></a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    Copyright © 2023 · Rentcars, All Rights Reserved
+                </div>
+            </footer>
+
+            <!-- Font Awesome Icons -->
+            <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 
 
 
